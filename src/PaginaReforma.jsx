@@ -18,7 +18,7 @@ export default function PaginaReforma() {
 
                 <h1 id="txt-reforma" className="p-10 font-[placard] text-[50px]">Oops!</h1>
 
-                <h2 id="txt-reforma" className="text-center font-[neubau] font-extrabold text-[25px]">Parece que esta página está passando por reformas, por favor, volte novamente mais tarde</h2>
+                <h2 id="txt-reforma" className="text-center font-[neubau] font-extrabold text-[25px]">Parece que esta página está passando por reformas, por favor, volte novamente em outro momento</h2>
 
             </div>
 
