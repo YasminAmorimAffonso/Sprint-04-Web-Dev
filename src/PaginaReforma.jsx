@@ -1,8 +1,8 @@
 
 
-import Cabecalho2 from "./Cabecalho2";
+import Cabecalho2 from "./components/Cabecalho2";
 
-import Rodape1 from "./Rodape1";
+import Rodape1 from "./components/Rodape1";
 
 import "./PaginaReforma.css";
 

@@ -8,7 +8,7 @@ import Cadastro from './Cadastro'
 import Inscricao from './Inscricao'
 import MinhaContaHome from './MinhaContaHome'
 import MinhaContaInscrição from './MinhaContaInscricao'
-import PaginaReforma from './components/paginaReforma'
+import PaginaReforma from './PaginaReforma'
 
 createRoot(document.getElementById('root')).render(
 
@@ -31,7 +31,7 @@ createRoot(document.getElementById('root')).render(
 
         <Route path="/minhaconta/inscricoes" element={<MinhaContaInscrição />} />
 
-        <Route path="/estamospassandoporreformas" element={<PaginaReforma />} />
+        <Route path="/estamospassandoporreformas" element={<PaginaReforma/>} />
 
       </Routes>
 
