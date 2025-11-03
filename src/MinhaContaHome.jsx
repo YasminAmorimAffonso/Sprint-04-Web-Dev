@@ -415,11 +415,11 @@ export default function MinhaContaHome() {
 
                     </div>
 
-                    <button onClick={Logoff} id="buttonSair-MCHome" className="flex flex-row justify-center items-center lg:mt-25 hover:cursor-pointer"><img src="/public/assets/imgs/logoff.png" alt="" className="w-20 pt-3" /> <p className="font-[placard] text-[25px]">Sair</p></button>
+                    <button onClick={Logoff} id="buttonSair-MCHome" className="flex flex-row justify-center items-center lg:mt-25 hover:cursor-pointer"><img src="/assets/imgs/logoff.png" alt="" className="w-20 pt-3" /> <p className="font-[placard] text-[25px]">Sair</p></button>
 
                 </div>
 
-                <img src="/public/assets/imgs/divisoria3.png" alt="" id="divisoria-MCHome" className="w-4/5 m-10" />
+                <img src="/assets/imgs/divisoria3.png" alt="" id="divisoria-MCHome" className="w-4/5 m-10" />
 
 
                 <div className="h-full p-5 pb-20 flex flex-col justify-around items-center">
