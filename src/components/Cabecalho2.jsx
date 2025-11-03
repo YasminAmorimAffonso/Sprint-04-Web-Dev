@@ -69,7 +69,7 @@ function Cabecalho2() {
 
                         <Link to={path} className='w-3 h-3 mb-3 md:w-5 h-5 lg:mr-25'><img src="/assets/imgs/vetorSelfCreme.png" alt="Vetor Self" /></Link>
 
-                        <Link to="/carrinho" className='w-6 h-6 md:w-10 h-10 mt-2'><img src="/assets/imgs/vetorCarrinhoCreme.png" alt="Vetor Carrinho" /></Link>
+                        <Link to="/estamospassandoporreformas" className='w-6 h-6 md:w-10 h-10 mt-2'><img src="/assets/imgs/vetorCarrinhoCreme.png" alt="Vetor Carrinho" /></Link>
 
                     </div>
 
