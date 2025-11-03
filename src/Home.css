@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+#content-home {
+
+    overflow: hidden;
+
+}
+
+
+#secUm-home {
+
+    background-image: url("/public/assets/imgs/fundoRoxo.png");
+
+    background-repeat: no-repeat;
+
+
+}
+
+
+#secDois-home {
+
+    color: #4B1970;
+
+}
+
+
+
+#secTres-home {
+
+    p,
+    h4 {
+
+        color: #4B1970;
+
+    }
+
+
+}
+
+#cardProduto-home {
+
+    background-image: url("/public/assets/imgs/fundoRosa.png");
+
+
+    p,
+    h5 {
+
+        color: #E3E0DC;
+
+    }
+
+}
+
+
+#secQuatro-home {
+
+    color: #4B1970;
+
+
+    #buttonInscricao-home {
+
+        background-image: url("/public/assets/imgs/fundoRoxo.png");
+
+        color: #E3E0DC;
+
+        transition: 0.3s;
+
+    }
+
+}
+
+
+#secCinco-home {
+
+    #linksQuadros-home {
+
+        background-image: url("/public/assets/imgs/fundoVerde.png");
+
+        padding: 10px;
+
+        border-radius: 20px;
+
+        margin-bottom: 25px;
+
+        
+        a {
+
+            img {
+
+                border: 2px solid #D25872;
+
+                border-radius: 10px;
+
+            }
+
+            h3 {
+
+                font-family: "neubau";
+                font-weight: 900;
+                font-size: 20px;
+
+                color: #E3E0DC;
+
+
+            }
+
+
+
+            p {
+
+                font-family: "neubau";
+
+                color: #E3E0DC;
+
+                text-align: center;
+
+                display: none;
+
+                margin-top: 15px;
+
+            }
+
+        }
+
+
+        a:hover {
+
+            p {
+
+                display: block;
+
+            }
+
+            img {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+
+}
+
+#secUlt-home {
+
+    background-image: url("/public/assets/imgs/fundoVerde.png");
+
+}
+
+

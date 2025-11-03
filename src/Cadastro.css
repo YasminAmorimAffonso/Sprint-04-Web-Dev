@@ -1,0 +1,52 @@
+
+
+
+
+@import "tailwindcss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+#box-cadastro {
+
+    background-image: url("/public/assets/imgs/fundoVerde.png");
+
+    background-size: cover;
+
+    button:hover {
+
+        transition: 0.3s;
+
+        cursor: pointer;
+
+    }
+
+    #txt-cadastro {
+
+        color: #E3E0DC;
+
+    }
+
+    #button-cadastro {
+
+        color: #E3E0DC;
+
+        background-image: url("/public/assets/imgs/fundoRosa.png");
+
+    }
+
+    #Link-cadastro {
+
+        color: #6F3892;
+
+        text-decoration: underline;
+
+    }
+
+}

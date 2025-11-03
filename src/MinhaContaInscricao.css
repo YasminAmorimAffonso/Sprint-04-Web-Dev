@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+
+
+
+#tituloRoxo-MCInscricao {
+
+    color: #6F3892;
+
+    letter-spacing: 0.75px;
+
+}
+
+
+#regular-MCInscricao {
+
+    color: #6F3892;
+
+}
+
+
+#regular-MCInscricao:hover {
+
+    transition: 0.3s;
+
+}
+
+
+
+
+#selected-MCInscricao {
+
+    color: #E3E0DC;
+
+    background-image: url("/public/assets/imgs/fundoRosa.png");
+    background-size: cover;
+
+}
+
+#selected-MCInscricao:hover {
+
+    transition: 0.3s;
+
+}
+
+
+#tituloRosa-MCInscricoes {
+
+    color: #CE697E;
+
+    letter-spacing: 0.75px;
+
+}
+
+
+#buttonSair-MCInscricao {
+
+    >p {
+
+        color: #6EA938;
+
+    }
+
+}
+
+
+
+
+#cardVerde-MCInscricao {
+
+    background-image: url("/public/assets/imgs/fundoVerde.png");
+
+    background-size: cover;
+
+    width: 80%;
+
+    h1,
+    h2 {
+
+        color: #E3E0DC;
+
+        font-family: "placard";
+
+        letter-spacing: 0.75px;
+
+    }
+
+    h2 {
+
+        font-size: 20px;
+
+    }
+
+    p {
+
+        color: #E3E0DC;
+
+        font-family: "neubau";
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    #cardVerde-MCInscricao {
+
+        height: 300px;
+
+        h1 {
+
+            font-size: 35px;
+
+        }
+
+        h2 {
+
+            font-size: 25px;
+
+        }
+
+        p {
+
+            color: #E3E0DC;
+
+            font-family: "neubau";
+
+            font-size: 20px;
+
+        }
+
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    #content-MCInscricao {
+
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-around;
+
+        overflow: hidden;
+
+        padding: 35px;
+
+        height: 1000px;
+
+        #menu-MCInscricao {
+
+            margin-left: -75px;
+
+        }
+
+        #divisoria-MCInscricao {
+
+            rotate: 90deg;
+
+            width: 750px;
+
+            margin-left: -435px;
+
+            margin-right: -325px;
+
+            margin-top: 335px;
+
+        }
+
+        #submenu-MCInscricao {
+
+            display: flex;
+
+            flex-direction: column;
+
+            height: 500px;
+
+        }
+
+        #secaoCard-MCInscricao {
+
+
+
+            #cardVerde-MCInscricao {
+
+                width: 80%;
+
+                h1 {
+
+                    font-size: 40px;
+
+                }
+
+                p {
+
+                    margin-top: 25px;
+
+                    font-size: 25px;
+
+                }
+
+            }
+
+        }
+
+
+
+
+
+    }
+
+}

@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+#content-inscricao {
+
+    overflow: hidden;
+
+    
+
+    select {
+
+        -webkit-appearance: none;
+
+        background: #E3E0DC url("/public/assets/imgs/arrowRosa.png") 98%  50% no-repeat;
+
+    }
+
+    select:hover {
+
+        cursor: pointer;
+
+    }
+
+    p {
+
+        width: 80%;
+
+        text-align: center;
+
+        font-family: "neubau";
+
+        color: #4B1970;
+
+        font-size: 25px;
+
+
+    }
+
+    h2 {
+
+        font-family: "placard";
+
+        color: #6EA938;
+
+        font-size: 35px;
+
+    }
+
+    label {
+
+        color: #E2D5D1;
+
+        font-family:  "placard";
+        font-weight: 600;
+
+
+    }
+
+    #secao1-inscricao {
+
+        background-image: url("/public/assets/imgs/fundoRosa.png");
+
+
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+    #card-inscricao {
+
+        background: url("/public/assets/imgs/fundoRoxo.png");
+        background-size: cover;
+
+        padding: 50px;
+
+        border-radius: 15px;
+
+
+    }
+
+    #button-inscricao {
+
+        background-image: url("/public/assets/imgs/fundoRosa.png");
+        background-size: cover;
+
+        color: #E2D5D1;
+
+    }
+
+}
+
+
+@media (min-width: 800px) {
+    
+    
+    #content-inscricao {
+
+        label {
+
+            font-size: 20px;
+
+        }
+
+    }
+
+
+}

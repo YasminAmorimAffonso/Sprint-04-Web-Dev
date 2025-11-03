@@ -1,0 +1,41 @@
+
+
+@import "tailwindcss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+#box-login {
+
+    background-image: url("/public/assets/imgs/fundoRosa.png");
+
+    background-size: cover;
+
+    #txt-login {
+
+        color: #E3E0DC;
+
+    }
+
+    #button-login {
+
+        color: #E3E0DC;
+
+        background-image: url("/public/assets/imgs/fundoVerde.png");
+
+    }
+
+    #Link-login {
+
+        color: #6F3892;
+
+        text-decoration: underline;
+
+    }
+
+}

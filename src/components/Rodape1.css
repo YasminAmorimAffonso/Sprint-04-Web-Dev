@@ -1,0 +1,111 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+#footer-rodape1 {
+
+    overflow: hidden;
+
+    background-image: url("../../public/assets/imgs/fundoRoxo.png");
+
+    #p-rodape1 {
+
+        color: #E3E0DC;
+
+    }
+
+
+    #titulo-rodape1 {
+
+        color: #E3E0DC;
+
+    }
+
+}
+
+
+
+@media (min-width: 800px) {
+
+    #icons-rodape {
+
+        width: 60%;
+
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    #footer-rodape1 {
+
+        #cima-rodape {
+
+            display: flex;
+
+            flex-direction: row;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin-left: 250px;
+
+            #logo-rodape {
+
+                width: 150px;
+
+            }
+
+            #meio-rodape1 {
+
+                display: flex;
+
+                flex-direction: row;
+
+
+                p {
+
+                    font-size: 30px;
+
+                }
+
+
+                #divisoria-rodape {
+
+                    rotate: 90deg;
+
+                }
+
+                #buttons-rodape {
+
+                    width: 500px;
+
+                    height: 250px;
+
+                }
+
+
+            }
+
+        }
+
+
+        #divisoriaBaixo-rodape {
+
+            width: 75%;
+
+            height: 35px;
+
+            margin: 50px;
+
+        }
+
+    }
+
+}

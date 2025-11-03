@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+select {
+
+    -webkit-appearance: none;
+
+    background: #E3E0DC url("/public/assets/imgs/arrowRosa.png") 98% 50% no-repeat;
+
+}
+
+select:hover {
+
+    cursor: pointer;
+
+}
+
+input {
+
+    padding: 10px;
+
+}
+
+label {
+
+    color: #E3E0DC;
+
+    -webkit-text-stroke: 0.5px #000;
+
+}
+
+#tituloRoxo-MCHOME {
+
+    color: #6F3892;
+
+    letter-spacing: 0.75px;
+
+}
+
+#tituloRosa-MCHOME {
+
+
+    color: #CE697E;
+
+    letter-spacing: 0.75px;
+
+}
+
+#selected-MCHOME {
+
+    color: #E3E0DC;
+
+    background-image: url("/public/assets/imgs/fundoRosa.png");
+
+    background-size: cover;
+
+}
+
+#selected-MCHOME:hover {
+
+    transition: 0.3s;
+
+}
+
+
+#regular-MCHOME {
+
+    color: #6F3892;
+
+}
+
+
+#regular-MCHOME:hover {
+
+    transition: 0.3s;
+
+}
+
+
+#buttonSair-MCHome {
+
+    >p {
+
+        color: #6EA938;
+
+    }
+
+}
+
+
+
+
+#cardVerde-MCHome {
+
+    background-image: url("/public/assets/imgs/fundoVerde.png");
+
+    background-size: cover;
+
+    width: 66%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+#botao-MCHome {
+
+    background-image: url("/public/assets/imgs/fundoRosa.png");
+
+    background-size: cover;
+
+    color: #E3E0DC;
+
+    letter-spacing: 1px;
+
+}
+
+
+@media (min-width: 768px) {
+
+    #cardVerde-MCHome {
+
+        width: 90%;
+
+    }
+
+
+}
+
+@media (min-width: 1000px) {
+
+    #content-MCHome {
+
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-around;
+
+        overflow: hidden;
+
+        padding: 35px;
+
+        #menu-MCHome {
+
+            margin-top: -750px;
+
+            margin-left: -75px;
+
+
+        }
+
+        #submenu-MCHome {
+
+            display: flex;
+
+            flex-direction: column;
+
+            height: 500px;
+
+        }
+
+        #divisoria-MCHome {
+
+            rotate: 90deg;
+
+            width: 750px;
+
+            margin-left: -435px;
+
+            margin-right: -325px;
+
+        }
+
+        #tituloRosa-MCHOME {
+
+            margin-top: 200px;
+
+            margin-right: 850px;
+
+        }
+
+
+        #cardVerde-MCHome {
+
+            padding-left: 135px;
+
+            >div {
+
+                display: flex;
+
+                flex-direction: row;
+
+
+
+            }
+
+            #campoEmail-MCHome {
+
+                display: flex;
+
+                flex-direction: column;
+
+            }
+
+        }
+
+    }
+
+}
