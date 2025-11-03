@@ -37,10 +37,13 @@ export default function MinhaContaInscrição() {
 
     useEffect(() => {
 
-        console.log(infos);
+        if (nome) { 
 
+            fetchInscricao();
 
-    }, [infos]);
+        }
+        
+    }, [nome]);
 
 
     async function nomeFetch() {

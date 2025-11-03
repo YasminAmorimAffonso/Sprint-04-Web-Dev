@@ -38,6 +38,8 @@ export default function MinhaContaHome() {
 
     const [stateEye, setStateEye] = useState(false);
 
+    const [eyeType, setEyeType] = useState("password");
+
     const navigate = useNavigate();
 
     const infosFetch = JSON.parse(localStorage.getItem("infosLogin") || "{}");
@@ -395,6 +397,26 @@ export default function MinhaContaHome() {
 
     }
 
+
+    function changeStateEye() {
+
+        setStateEye(!stateEye)
+
+        if (stateEye == false) {
+
+            setEyeType("password");
+            
+
+        } 
+
+        else {
+
+            setEyeType("text");
+
+        }
+
+    }
+
     return (
 
         <div className="flex flex-col items-center w-full h-full bg-[#E3E0DC]">
@@ -470,10 +492,10 @@ export default function MinhaContaHome() {
 
                                 <label className="font-[placard] text-[30px]">Senha</label>
 
-                                <input type="password" name="" id="" value={password}
+                                <input type={eyeType} name="" id="inputPassword-MCHome" value={password}
                                     disabled={isSubmitting} onChange={(e) => setPassword(e.target.value)} className="rounded-[20px] bg-[#E3E0DC] shadow-[inset_0_2px_4px_#00000040] md:w-[600px] lg:w-[450px]" />
 
-                                    <img src="/public/assets/imgs/" alt="" />
+                                    <button onClick={changeStateEye} id="eyePassword-MCHome" className="relative translate-x-45 -translate-y-11"><img src="/assets/imgs/olhoRosa.png" alt="button exibir senha" className="w-6.75"/></button>
 
                             </div>
 

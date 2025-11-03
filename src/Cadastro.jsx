@@ -25,6 +25,10 @@ export default function Cadastro() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    const [stateEye, setStateEye] = useState(false);
+
+    const [eyeType, setEyeType] = useState("password");
+
     const navigate = useNavigate();
 
 
@@ -84,6 +88,27 @@ export default function Cadastro() {
     }
 
 
+
+    function changeStateEye() {
+
+        setStateEye(!stateEye)
+
+        if (stateEye == false) {
+
+            setEyeType("password");
+            
+
+        } 
+
+        else {
+
+            setEyeType("text");
+
+        }
+
+    }
+
+
     return (
 
         <div className="flex flex-col items-center h-full bg-[#E3E0DC]">
@@ -129,7 +154,10 @@ export default function Cadastro() {
 
                     <label htmlFor="" id="txt-cadastro" className="font-[placard] text-xl">Senha</label>
 
-                    <input type="password" value={newPassword} disabled={isSubmitting} onChange={(e) => setNewPassword(e.target.value)} placeholder="Insira sua senha" className="bg-[#E3E0DC] rounded-full shadow-[inset_0_2px_4px_#00000040] p-3 placeholder: font-[neubau] text-gray-500 md:w-125" />
+                    <input type={eyeType} value={newPassword} disabled={isSubmitting} onChange={(e) => setNewPassword(e.target.value)} placeholder="Insira sua senha" className="bg-[#E3E0DC] rounded-full shadow-[inset_0_2px_4px_#00000040] p-3 placeholder: font-[neubau] text-gray-500 md:w-125" />
+
+
+                    <button onClick={changeStateEye} id="eyePassword-cadastro" className="relative translate-x-12.5 -translate-y-8.5"><img src="/assets/imgs/olhoRosa.png" alt="button exibir senha" className="w-6.75"/></button>
 
 
                 </div>

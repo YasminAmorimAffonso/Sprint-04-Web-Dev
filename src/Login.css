@@ -39,3 +39,14 @@
     }
 
 }
+
+
+@media (min-width: 768px) {
+
+    #eyePassword-login {
+
+        transform: translate(175px);
+
+    }
+
+}

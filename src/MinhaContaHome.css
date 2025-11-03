@@ -134,6 +134,12 @@ label {
 
     }
 
+    #eyePassword-MCHome {
+
+        transform: translate(375px);
+
+    }
+
 
 }
 
@@ -211,6 +217,19 @@ label {
                 flex-direction: column;
 
             }
+
+            #inputPassword-MCHome {
+
+                margin-bottom: -50px;
+
+            }
+
+            #eyePassword-MCHome {
+
+                transform: translate(225px, 35px);
+        
+            }
+        
 
         }
 

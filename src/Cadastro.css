@@ -50,3 +50,15 @@
     }
 
 }
+
+
+@media (min-width: 768px) {
+    
+
+    #eyePassword-cadastro {
+
+        transform: translate(165px);
+        
+    }
+
+}

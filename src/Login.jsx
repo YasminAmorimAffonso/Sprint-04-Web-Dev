@@ -19,6 +19,10 @@ export default function Login() {
 
     const [logged, setLogged] = useState(false);
 
+    const [stateEye, setStateEye] = useState(false);
+
+    const [eyeType, setEyeType] = useState("password");
+
     const navigate = useNavigate();
 
 
@@ -85,6 +89,26 @@ export default function Login() {
         }
     }
 
+
+    function changeStateEye() {
+
+        setStateEye(!stateEye)
+
+        if (stateEye == false) {
+
+            setEyeType("password");
+            
+
+        } 
+
+        else {
+
+            setEyeType("text");
+
+        }
+
+    }
+
     return (
 
         <div className="flex flex-col items-center h-full bg-[#E3E0DC]">
@@ -112,7 +136,11 @@ export default function Login() {
 
                     <label htmlFor="" id="txt-login" className="font-[placard] text-xl">Senha</label>
 
-                    <input type="password" placeholder="Insira sua senha" value={password} onChange={(e) => setPassword(e.target.value)} className="bg-[#E3E0DC] rounded-full shadow-[inset_0_2px_4px_#00000040] p-3 placeholder: font-[neubau] text-gray-500 md:w-125" />
+                    <input type={eyeType} placeholder="Insira sua senha" value={password} onChange={(e) => setPassword(e.target.value)} className="bg-[#E3E0DC] rounded-full shadow-[inset_0_2px_4px_#00000040] p-3 placeholder: font-[neubau] text-gray-500 md:w-125" />
+
+
+                    <button onClick={changeStateEye} id="eyePassword-login" className="relative translate-x-12.5 -translate-y-8.5"><img src="/assets/imgs/olhoVerde.png" alt="button exibir senha" className="w-5"/></button>
+
 
                 </div>
 
