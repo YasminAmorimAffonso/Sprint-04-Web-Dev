@@ -23,8 +23,6 @@ export default function MinhaContaInscrição() {
 
     const [nome, setNome] = useState("");
 
-    const [birthday, setBirthday] = useState("");
-
     const infosFetch = JSON.parse(localStorage.getItem("infosLogin") || "{}");
 
     const navigate = useNavigate();
@@ -51,7 +49,7 @@ export default function MinhaContaInscrição() {
 
             .from("users")
 
-            .select("name,lastName,birthday")
+            .select("name,lastName")
 
             .eq("id", infosFetch.id)
 
@@ -60,8 +58,6 @@ export default function MinhaContaInscrição() {
         const nomeComp = data.name + " " + data.lastName;
 
         setNome(nomeComp);
-
-        setBirthday(data.birthday);
 
 
     }
@@ -140,11 +136,11 @@ export default function MinhaContaInscrição() {
 
                     </div>
 
-                    <button onClick={Logoff} id="buttonSair-MCInscricao" className="flex flex-row justify-center items-center lg:mt-25 hover:cursor-pointer"><img src="/public/assets/imgs/logoff.png" alt="" className="w-20 pt-3" /> <p className="font-[placard] text-[25px]">Sair</p></button>
+                    <button onClick={Logoff} id="buttonSair-MCInscricao" className="flex flex-row justify-center items-center lg:mt-25 hover:cursor-pointer"><img src="/assets/imgs/logoff.png" alt="" className="w-20 pt-3" /> <p className="font-[placard] text-[25px]">Sair</p></button>
 
                 </div>
 
-                <img src="/public/assets/imgs/divisoria3.png" alt="" id="divisoria-MCInscricao" className="w-4/5 m-10" />
+                <img src="/assets/imgs/divisoria3.png" alt="" id="divisoria-MCInscricao" className="w-4/5 m-10" />
 
                 <div id="secaoCard-MCInscricao" className="h-4/5 w-full -mb-[100px] p-10 flex flex-col items-center">
 
