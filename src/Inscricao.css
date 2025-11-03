@@ -18,7 +18,7 @@
 
         -webkit-appearance: none;
 
-        background: #E3E0DC url("/public/assets/imgs/arrowRosa.png") 98%  50% no-repeat;
+        background: #E3E0DC url("/assets/imgs/arrowRosa.png") 98%  50% no-repeat;
 
     }
 
@@ -65,7 +65,7 @@
 
     #secao1-inscricao {
 
-        background-image: url("/public/assets/imgs/fundoRosa.png");
+        background-image: url("/assets/imgs/fundoRosa.png");
 
 
         background-position-x: 50%;
@@ -77,7 +77,7 @@
 
     #card-inscricao {
 
-        background: url("/public/assets/imgs/fundoRoxo.png");
+        background: url("/assets/imgs/fundoRoxo.png");
         background-size: cover;
 
         padding: 50px;
@@ -89,7 +89,7 @@
 
     #button-inscricao {
 
-        background-image: url("/public/assets/imgs/fundoRosa.png");
+        background-image: url("/assets/imgs/fundoRosa.png");
         background-size: cover;
 
         color: #E2D5D1;

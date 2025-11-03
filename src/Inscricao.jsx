@@ -346,19 +346,19 @@ export default function Inscricao() {
 
             <div id="content-inscricao" className="m-0 flex flex-col items-center justify-center w-full">
 
-                <img src="/public/assets/imgs/divisoria1.png" alt="" className='absolute -mt-1350 h-[25px] md:-mt-1390 h-[250px] lg:-mb-[450px] h-[500px] w-full' />
+                <img src="/assets/imgs/divisoria1.png" alt="" className='absolute -mt-1350 h-[25px] md:-mt-1390 h-[250px] lg:-mb-[450px] h-[500px] w-full' />
 
                 <div id="secao1-inscricao" className="pt-35 h-full w-full flex flex-row items-center p-4 m-0 md:w-100 lg:pt-50">
 
-                    <img src="/public/assets/imgs/jogadora2.svg" alt="" className="w-50 -mr-[20px] md:w-100 lg:w-250 -mr-[45px]" />
+                    <img src="/assets/imgs/jogadora2.svg" alt="" className="w-50 -mr-[20px] md:w-100 lg:w-250 -mr-[45px]" />
 
-                    <img src="/public/assets/imgs/voceTambemPodeSeTornarUmaCampea.png" alt="" className="w-35 h-full -mt-[50px] md:w-80 mt-[0px] ml-[0px] lg:w-150 mr-[200px] mb-[250px]" />
+                    <img src="/assets/imgs/voceTambemPodeSeTornarUmaCampea.png" alt="" className="w-35 h-full -mt-[50px] md:w-80 mt-[0px] ml-[0px] lg:w-150 mr-[200px] mb-[250px]" />
 
                 </div>
 
                 <div className="pt-35 flex flex-col items-center justify-around h-150">
 
-                    <img src="/public/assets/imgs/conhecaOCampeonatoDoPab.png" alt="Conheça o Campeonato do PAB" className="w-125" />
+                    <img src="/assets/imgs/conhecaOCampeonatoDoPab.png" alt="Conheça o Campeonato do PAB" className="w-125" />
 
                     <p>O Campeonato Passa a Bola é mais do que um torneio — é um movimento que impulsiona o futebol feminino e dá visibilidade a novas jogadoras, equipes e histórias inspiradoras. Criado para fortalecer a comunidade e ampliar o espaço das mulheres no esporte, o campeonato reúne times de diferentes regiões em partidas cheias de energia, talento e emoção. Além da disputa em campo, o evento promove integração, representatividade e oportunidades reais para quem vive o futebol com paixão. Quer fazer parte dessa história? Monte seu time, inscreva-se e venha jogar com a gente!</p>
 
@@ -366,7 +366,7 @@ export default function Inscricao() {
 
                 <div className="pt-35 flex flex-col items-center justify-around mt-50 h-150 lg:mt-0">
 
-                    <img src="/public/assets/imgs/inscrevase.png" alt="Inscreva-se" className="w-65" />
+                    <img src="/assets/imgs/inscrevase.png" alt="Inscreva-se" className="w-65" />
 
                     <p>Está pronta para entrar em campo? A inscrição para o Campeonato do Passa a Bola é simples e rápida! Preencha as informações pessoais do responsável pela equipe e, em seguida, adicione os dados do seu time, com o nome e as jogadoras que farão parte da competição. Depois, informe as titulares e reservas, além do/a técnico/a e do/a massagista, garantindo que toda a equipe esteja registrada corretamente. Reúna seu grupo, envie suas informações e prepare-se para viver a experiência única de fazer parte do campeonato que celebra o futebol feminino em sua essência!</p>
 
@@ -502,7 +502,7 @@ export default function Inscricao() {
 
                     </div>
 
-                    <img src="/public/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
+                    <img src="/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
 
                     <div className="flex flex-col items-center">
 
@@ -577,7 +577,7 @@ export default function Inscricao() {
 
                     </div>
 
-                    <img src="/public/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
+                    <img src="/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
 
                     <h2>Titulares</h2>
 
@@ -614,7 +614,7 @@ export default function Inscricao() {
                     </div>
 
 
-                    <img src="/public/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
+                    <img src="/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
 
                     <h2>Reservas</h2>
 
@@ -650,7 +650,7 @@ export default function Inscricao() {
 
                     </div>
 
-                    <img src="/public/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
+                    <img src="/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
 
                     <h2>Técnino(a)</h2>
 
@@ -686,7 +686,7 @@ export default function Inscricao() {
 
                     </div>
 
-                    <img src="/public/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
+                    <img src="/assets/imgs/divisoria3.png" alt="" className='w-4/5 m-10' />
 
                     <h2>Massagista</h2>
 
