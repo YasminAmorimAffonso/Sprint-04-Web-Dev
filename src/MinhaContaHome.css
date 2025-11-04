@@ -123,6 +123,23 @@ label {
 
     letter-spacing: 1px;
 
+    transition: 0.3s;
+
+}
+
+
+#botaoRoxo-MCHome {
+
+    background-image: url("/public/assets/imgs/fundoRoxo.png");
+
+    background-size: cover;
+
+    color: #E3E0DC;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+
 }
 
 
@@ -198,7 +215,17 @@ label {
 
         #cardVerde-MCHome {
 
-            padding-left: 135px;
+            border-radius: 25px;
+            padding: 40px;
+            margin: 60px;
+            width: 1050px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            overflow: hidden;
 
             >div {
 
@@ -227,9 +254,26 @@ label {
             #eyePassword-MCHome {
 
                 transform: translate(225px, 35px);
-        
+
             }
-        
+
+            #buttonsAcoes-MCHome {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 20px;
+                margin-top: 40px;
+
+                >button {
+
+                    width: 150px;
+
+                }
+
+
+            }
 
         }
 

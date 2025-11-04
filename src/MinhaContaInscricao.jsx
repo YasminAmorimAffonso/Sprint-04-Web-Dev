@@ -183,30 +183,41 @@ export default function MinhaContaInscrição() {
                     <div className="h-4/5 w-full -mb-[200px] p-5 flex flex-col items-center justify-around overflow-y-auto overflow-x-hidden shadow-[inset_0_4px_8px_rgba(0,0,0,0.25)] rounded-2xl">
 
                         {infos.length === 0 ? (
+
                             <p id="txt-MCInscricao" className="text-[25px] mt-10 font-[neubau]">
+
                                 Você não está inscrito(a) em nenhum campeonato!
+
                             </p>
+
                         ) : (
                             infos.map((info) => (
+
                                 <div key={info.id} id="cardVerde-MCInscricao" className="rounded-2xl h-1/2 p-10 flex flex-col justify-around items-center m-10">
+
                                     <h1 id="txt-MCInscricao" className="text-[30px]">{info.nomeTime}</h1>
+
                                     <div className="flex flex-row justify-around w-full">
+
                                         <div className="flex flex-col items-center">
+
                                             <h2 id="txt-MCInscricao">Categoria</h2>
+
                                             <p id="txt-MCInscricao">{info.categoriaTime}</p>
+                                            
                                         </div>
+
                                         <div className="flex flex-col items-center">
+
                                             <h2 id="txt-MCInscricao">Posição</h2>
+
                                             <p id="txt-MCInscricao">{info.nomeTitular === nome ? "Titular" : "Reserva"}</p>
+
                                         </div>
+
                                     </div>
-                                    <button
-                                        id="botao-MCInscricao"
-                                        onClick={() => cancelarinscricao(info.id)}
-                                        className="m-5 p-5 rounded-full w-40 text-[15px] font-[placard] hover:scale-110 lg:ml-[750px]"
-                                    >
-                                        Cancelar inscrição
-                                    </button>
+                                    
+                                    <button id="botao-MCInscricao" onClick={() => cancelarinscricao(info.id)} className="m-5 p-5 rounded-full w-40 text-[15px] font-[placard] hover:scale-110 lg:ml-[750px]">Cancelar inscrição</button>
                                 </div>
                             ))
                         )}

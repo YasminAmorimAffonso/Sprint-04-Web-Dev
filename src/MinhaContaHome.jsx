@@ -374,6 +374,40 @@ export default function MinhaContaHome() {
 
     }
 
+
+    async function excluirConta() {
+
+        const confirmacao = window.confirm("Tem certeza que deseja excluir sua conta?");
+
+        if (!confirmacao) return;
+
+        const { error } = await supabase
+
+            .from("users")
+
+            .delete()
+
+            .eq("id", infos.id);
+
+        if (error) {
+
+            alert("Erro ao excluir conta!");
+
+        }
+
+        else {
+
+            alert("Conta excluída com sucesso!");
+
+            localStorage.removeItem("infosLogin");
+
+            navigate("/login");
+        }
+        
+    }
+
+
+
     function Logoff() {
 
         const infosLocalStorage = JSON.parse(localStorage.getItem("infosLogin"));
@@ -541,9 +575,15 @@ export default function MinhaContaHome() {
 
                         </div>
 
-                        <button id="botao-MCHome" onClick={editInfo} disabled={isSubmitting} className="m-5 p-5 rounded-full w-35 text-[20px] font-[placard] hover:scale-110 lg:ml-[750px]">{isSubmitting ? "Salvando..." : "Salvar"}</button>
+                        <div id="buttonsAcoes-MCHome" className="flex flex-col-reverse justify-around items-center">
+
+                        
+                        <button id="botaoRoxo-MCHome" onClick={excluirConta} disabled={isSubmitting} className="m-5 p-5 rounded-full w-35 text-[20px] font-[placard] hover:scale-110">Excluir Conta</button>
+
+                        <button id="botao-MCHome" onClick={editInfo} disabled={isSubmitting} className="m-5 p-5 rounded-full w-35 text-[20px] font-[placard] hover:scale-110">{isSubmitting ? "Salvando..." : "Salvar"}</button>
 
 
+                        </div>
 
                     </div>
 
