@@ -27,7 +27,7 @@ function Home() {
 
         </div>
 
-        <div id='secDois-home' className='w-[350px] pt-15 p-4 flex md:pt-50 lg:pt-75 flex flex-row justify-around w-full'>
+        <div id='secDois-home' className=' pt-15 p-4 flex md:pt-50 lg:pt-75 flex flex-row justify-around w-full'>
 
           <div className='flex flex-col justify-around h-75 lg:h-150'>
 
@@ -44,7 +44,7 @@ function Home() {
 
 
 
-        <img src="/assets/imgs/divisoria2.png" alt="" className='-ml-[40px] opacity-70 md:mr-50 lg:w-[850px] mr-175' />
+        <img src="/assets/imgs/divisoria2.png" alt="" className='-ml-[550px] opacity-70 md:mr-50 lg:w-[850px] mr-175' />
 
 
 
@@ -54,7 +54,7 @@ function Home() {
 
           <img src="/assets/imgs/lojaDoPab.png" alt="" className='w-30 mb-7 md:w-40 lg:w-50 mb-35' />
 
-          <p className='font-[neubau] text-[15px] mb-7 md:text-[20px] w-150 lg:text-[25px] w-[1000px]'>A Loja do PAB, o espaço onde o futebol feminino ganha forma, cor e atitude. Aqui, você encontra produtos licenciados que celebram a força, a garra e a beleza das mulheres no esporte — com a qualidade e o estilo que só a Passa a Bola oferece.</p>
+          <p className='font-[neubau] text-[15px] mb-7 md:text-[20px] md:w-150 lg:text-[25px] w-[1000px]'>A Loja do PAB, o espaço onde o futebol feminino ganha forma, cor e atitude. Aqui, você encontra produtos licenciados que celebram a força, a garra e a beleza das mulheres no esporte — com a qualidade e o estilo que só a Passa a Bola oferece.</p>
 
           <h4 className='font-[neubau] text-[20px] font-bold mb-7 lg:text-[30px] mb-15'>Conheça nossos produtos</h4>
 

@@ -159,3 +159,32 @@
 }
 
 
+@media (min-width: 350px) {
+
+    #secDois-home {
+
+        p {
+
+            width: 350px;
+            max-width: 100%;
+
+        }
+
+    }
+
+    #secTres-home {
+
+        display: flex;
+
+        transform: translate(300px);
+
+        p {
+
+            width: 350px;
+            max-width: 100%;
+
+        }
+
+    }
+    
+}
