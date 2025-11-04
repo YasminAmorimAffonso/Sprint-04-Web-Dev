@@ -27,7 +27,7 @@ function Home() {
 
         </div>
 
-        <div id='secDois-home' className=' pt-15 p-4 flex md:pt-50 lg:pt-75 flex flex-row justify-around w-full'>
+        <div id='secDois-home' className='w-[350px] pt-15 p-4 flex md:pt-50 lg:pt-75 flex flex-row justify-around w-full'>
 
           <div className='flex flex-col justify-around h-75 lg:h-150'>
 
