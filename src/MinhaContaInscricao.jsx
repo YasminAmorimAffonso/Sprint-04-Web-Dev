@@ -37,12 +37,12 @@ export default function MinhaContaInscrição() {
 
     useEffect(() => {
 
-        if (nome) { 
+        if (nome) {
 
             fetchInscricao();
 
         }
-        
+
     }, [nome]);
 
 
@@ -90,6 +90,37 @@ export default function MinhaContaInscrição() {
 
     }
 
+    async function cancelarinscricao(id) {
+
+        const confirmacao = window.confirm("Tem certeza que deseja excluir esta inscrição?");
+
+        if (!confirmacao) return;
+
+        const { error } = await supabase
+
+            .from("inscricoes")
+
+            .delete()
+
+            .eq("id", id);
+
+        if (error) {
+
+            alert("Erro ao excluir inscrição!");
+
+        }
+
+        else {
+
+            alert("Inscrição excluída com sucesso!");
+
+            fetchInscricao();
+
+        }
+
+
+    }
+
 
 
     function Logoff() {
@@ -123,7 +154,7 @@ export default function MinhaContaInscrição() {
 
             <Cabecalho2 />
 
-            <div id="content-MCInscricao" className="m-0 h-250 pt-45 flex flex-col items-center justify-center w-full">
+            <div id="content-MCInscricao" className="m-0 h-450 flex flex-col items-center justify-center w-full overflow-x-hidden">
 
 
                 <div id="menu-MCInscricao" className="h-35 flex flex-col justify-around items-center lg:-mt-[450px]">
@@ -143,47 +174,42 @@ export default function MinhaContaInscrição() {
 
                 </div>
 
-                <img src="/assets/imgs/divisoria3.png" alt="" id="divisoria-MCInscricao" className="w-4/5 m-10" />
+                <img src="/assets/imgs/divisoria3.png" alt="" id="divisoria-MCInscricao" className="w-4/5 m-20" />
 
-                <div id="secaoCard-MCInscricao" className="h-4/5 w-full -mb-[100px] p-10 flex flex-col items-center">
+                <div id="secaoCard-MCInscricao" className="h-3/5 w-full -mb-[100px] p-5 flex flex-col items-center justify-around">
 
                     <h1 id="tituloRosa-MCInscricoes" className="text-[35px] mb-[100px] font-[placard]">Informações da Inscrição</h1>
 
-                    <div className="h-4/5 w-full -mb-[200px] p-10 flex flex-col items-center overflow-y-auto shadow-[inset_0_4px_8px_rgba(0,0,0,0.25)] rounded-2xl">
+                    <div className="h-4/5 w-full -mb-[200px] p-5 flex flex-col items-center justify-around overflow-y-auto overflow-x-hidden shadow-[inset_0_4px_8px_rgba(0,0,0,0.25)] rounded-2xl">
 
-                        {!infos ? <p>Você não está inscrito(a) em nenhum campeonato!</p> : infos.map((info) => (
-
-                            <div id="cardVerde-MCInscricao" className="rounded-2xl h-2/8 p-10 flex flex-col justify-around items-center m-10">
-
-
-                                <h1 id="txt-MCInscricao" className="text-[30px]">{info.nomeTime}</h1>
-
-                                <div className="flex flex-row justify-around w-full">
-
-                                    <div className="flex flex-col items-center">
-
-                                        <h2 id="txt-MCInscricao">Categoria</h2>
-
-                                        <p id="txt-MCInscricao">{info.categoriaTime}</p>
-
+                        {infos.length === 0 ? (
+                            <p id="txt-MCInscricao" className="text-[25px] mt-10 font-[neubau]">
+                                Você não está inscrito(a) em nenhum campeonato!
+                            </p>
+                        ) : (
+                            infos.map((info) => (
+                                <div key={info.id} id="cardVerde-MCInscricao" className="rounded-2xl h-1/2 p-10 flex flex-col justify-around items-center m-10">
+                                    <h1 id="txt-MCInscricao" className="text-[30px]">{info.nomeTime}</h1>
+                                    <div className="flex flex-row justify-around w-full">
+                                        <div className="flex flex-col items-center">
+                                            <h2 id="txt-MCInscricao">Categoria</h2>
+                                            <p id="txt-MCInscricao">{info.categoriaTime}</p>
+                                        </div>
+                                        <div className="flex flex-col items-center">
+                                            <h2 id="txt-MCInscricao">Posição</h2>
+                                            <p id="txt-MCInscricao">{info.nomeTitular === nome ? "Titular" : "Reserva"}</p>
+                                        </div>
                                     </div>
-
-                                    <div className="flex flex-col items-center">
-
-                                        <h2 id="txt-MCInscricao">Posição</h2>
-
-                                        <p id="txt-MCInscricao">{info.nomeTitular == nome ? "Titular" : "Reserva"}</p>
-
-                                    </div>
-
+                                    <button
+                                        id="botao-MCInscricao"
+                                        onClick={() => cancelarinscricao(info.id)}
+                                        className="m-5 p-5 rounded-full w-40 text-[15px] font-[placard] hover:scale-110 lg:ml-[750px]"
+                                    >
+                                        Cancelar inscrição
+                                    </button>
                                 </div>
-
-                            </div>
-
-
-
-                        ))}
-
+                            ))
+                        )}
 
                     </div>
 

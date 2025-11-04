@@ -72,6 +72,12 @@
 
 }
 
+#txt-MCInscricao {
+
+    color: #6F3892;
+
+}
+
 
 
 
@@ -109,6 +115,25 @@
         font-size: 17px;
 
     }
+
+}
+
+
+#botao-MCInscricao {
+
+    background-image: url("/public/assets/imgs/fundoRosa.png");
+
+    background-size: cover;
+
+    color: #E3E0DC;
+
+    letter-spacing: 1px;
+
+}
+
+#botao-MCInscricao {
+
+    transition: 0.3s;
 
 }
 
@@ -219,6 +244,26 @@
 
 
 
+
+    }
+
+}
+
+
+@media (min-width: 980px) {
+    
+    #secaoCard-MCInscricao {
+
+        margin-top: -200px;
+
+
+        #cardVerde-MCInscricao {
+
+            padding: 75px;
+
+            height: 100%;
+
+        }
 
     }
 
