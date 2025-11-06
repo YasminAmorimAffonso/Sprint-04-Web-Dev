@@ -6,203 +6,261 @@
 
 @tailwind utilities;
 
-
-
-
 #content-home {
-
-    overflow: hidden;
-
+  overflow: hidden;
 }
-
 
 #secUm-home {
+  background-image: url("/public/assets/imgs/fundoRoxo.png");
 
-    background-image: url("/public/assets/imgs/fundoRoxo.png");
-
-    background-repeat: no-repeat;
-
-
+  background-repeat: no-repeat;
 }
-
 
 #secDois-home {
-
-    color: #4B1970;
-
+  color: #4b1970;
 }
 
-
-
 #secTres-home {
-
-    p,
-    h4 {
-
-        color: #4B1970;
-
-    }
-
-
+  p,
+  h4 {
+    color: #4b1970;
+  }
 }
 
 #cardProduto-home {
+  background-image: url("/public/assets/imgs/fundoRosa.png");
 
-    background-image: url("/public/assets/imgs/fundoRosa.png");
-
-
-    p,
-    h5 {
-
-        color: #E3E0DC;
-
-    }
-
+  p,
+  h5 {
+    color: #e3e0dc;
+  }
 }
-
 
 #secQuatro-home {
+  color: #4b1970;
 
-    color: #4B1970;
+  #buttonInscricao-home {
+    background-image: url("/public/assets/imgs/fundoRoxo.png");
 
+    background-size: cover;
 
-    #buttonInscricao-home {
+    font-family: placard;
 
-        background-image: url("/public/assets/imgs/fundoRoxo.png");
+    font-size: 25px;
 
-        color: #E3E0DC;
+    color: #e3e0dc;
 
-        transition: 0.3s;
-
-    }
-
+    transition: 0.3s;
+  }
 }
 
-
 #secCinco-home {
+  #linksQuadros-home {
+    background-image: url("/public/assets/imgs/fundoVerde.png");
 
-    #linksQuadros-home {
+    padding: 10px;
 
-        background-image: url("/public/assets/imgs/fundoVerde.png");
+    border-radius: 20px;
 
-        padding: 10px;
+    margin-bottom: 25px;
 
-        border-radius: 20px;
+    a {
+      img {
+        border: 2px solid #d25872;
 
-        margin-bottom: 25px;
+        border-radius: 10px;
+      }
 
-        
-        a {
+      h3 {
+        font-family: "neubau";
+        font-weight: 900;
+        font-size: 20px;
 
-            img {
+        color: #e3e0dc;
+      }
 
-                border: 2px solid #D25872;
+      p {
+        font-family: "neubau";
 
-                border-radius: 10px;
+        color: #e3e0dc;
 
-            }
+        text-align: center;
 
-            h3 {
+        display: none;
 
-                font-family: "neubau";
-                font-weight: 900;
-                font-size: 20px;
-
-                color: #E3E0DC;
-
-
-            }
-
-
-
-            p {
-
-                font-family: "neubau";
-
-                color: #E3E0DC;
-
-                text-align: center;
-
-                display: none;
-
-                margin-top: 15px;
-
-            }
-
-        }
-
-
-        a:hover {
-
-            p {
-
-                display: block;
-
-            }
-
-            img {
-
-                display: none;
-
-            }
-
-        }
-
+        margin-top: 15px;
+      }
     }
 
+    a:hover {
+      p {
+        display: block;
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
 }
 
 #secUlt-home {
-
-    background-image: url("/public/assets/imgs/fundoVerde.png");
-
+  background-image: url("/public/assets/imgs/fundoVerde.png");
 }
 
+@media (min-width: 768px) {
+  #secDois-home {
+    padding-left: 35px;
 
-@media (min-width: 350px) {
+    p {
+      width: 75%;
 
-    #secDois-home {
+      font-size: 20px;
+    }
+
+    #logo-home {
+      width: 250px;
+
+      transform: translate(-50px);
+    }
+  }
+
+  #secTres-home {
+    padding-right: 35px;
+    p {
+      width: 75%;
+
+      font-size: 20px;
+    }
+  }
+
+  #secQuatro-home {
+    padding-left: 35px;
+
+    #textImage-home {
+      display: flex;
+
+      flex-direction: row;
+
+      #jogadora-home {
+        width: 400px;
+
+        transform: translate(0px, 75px);
+      }
+    }
+
+    p {
+      width: 100%;
+
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  #secDois-home {
+    padding-top: 350px;
+
+    #tituloSecDois-home {
+      width: 350px;
+
+      transform: translate(50px);
+    }
+
+    p {
+      font-size: 25px;
+
+      transform: translate(50px, -100px);
+    }
+
+    #logo-home {
+      width: 450px;
+    }
+  }
+
+  #div2-home {
+    transform: translate(-300px);
+  }
+
+  #secTres-home {
+    p {
+      font-size: 25px;
+
+      width: 70%;
+
+      transform: translate(-50px);
+    }
+
+    h4 {
+      transform: translate(-50px);
+    }
+
+    #tituloSecTres-home {
+      width: 175px;
+
+      transform: translate(-50px);
+    }
+
+    #cardProduto-home {
+      height: 475px;
+
+      transform: translate(-50px);
+
+      p {
+        transform: translate(25px);
+      }
+    }
+  }
+
+  #secQuatro-home {
+    #textImage-home {
+      div {
+        img {
+          width: 325px;
+        }
 
         p {
-
-            width: 200px;
-            max-width: 100%;
-
+          font-size: 25px;
         }
+      }
 
-        img {
-
-            width: 200px;
-
-        }
+          #jogadora-home {
+      width: 600px;
+    }
 
     }
 
-    #secTres-home {
+
+  }
+
+
+  #secCinco-home {
+
+    
+      img {
+
+        width: 300px;
+
+      }
+
+    #quadros-home {
+
+      display: flex;
+
+      flex-direction: row;
+
+      #linhaQuadros-home {
 
         display: flex;
 
-        transform: translate(150px);
+        flex-direction: row;
 
-        p {
+        margin-left: 50px;
 
-            width: 350px;
-            max-width: 100%;
-
-        }
+      }
 
     }
 
-    #secQuatro-home {
+  }
 
-        p {
-font-size: 15px;
-
-width: 350px;
-max-width: 100%;
-
-        }
-
-    }
-    
 }
