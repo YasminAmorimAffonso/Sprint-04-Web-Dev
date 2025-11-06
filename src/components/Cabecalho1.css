@@ -54,13 +54,14 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 980px) {
 
     #nav-cabecalho1 {
 
         display: flex;
 
         justify-content: space-between;
+
 
 
         #div-cabecalho1 {
